@@ -1,0 +1,49 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #85929E;
+}
+
+.view {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all; 
+    background-color: #17A589 ;
+    border: 10px solid #117A65;
+}
+
+.view .display {
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+}
+
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    background-color: #5D6D7E;
+}
+
+.container > button {
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    border: 20px solid #E5E7E9;
+}
+
+.container > button:hover {
+    background-color: #85929E;
+}
+
+
+
